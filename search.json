@@ -4,7 +4,7 @@
     "href": "Identifying_affiliated_publications.html",
     "title": "2  Identifying affiliated publications",
     "section": "",
-    "text": "2.1 Selecting a data source\n[include overview of main source options, but also explain why we ultimately recommend OpenAlex and note that we will provide a sample workflow for Open Alex, but that other workflow documents exist for those tools]\nhttps://docs.google.com/document/d/1RToJwlr2ZdEF1F6FZRyh9izUj0j2llOdlA7tveutd30/edit?usp=sharing",
+    "text": "2.1 Selecting a data source\n[include overview of main source options, but also explain why we ultimately recommend OpenAlex and note that we will provide a sample workflow for OpenAlex, but that other workflow documents exist for those tools]\ndocs.google.com/document/d/1RToJwlr2ZdEF1F6FZRyh9izUj0j2llOdlA7tveutd30/edit?usp=sharing",
     "crumbs": [
       "<span class='chapter-number'>2</span>  <span class='chapter-title'>Identifying affiliated publications</span>"
     ]
@@ -127,6 +127,16 @@
     "text": "Preface\nThis is a Quarto book.\nTo learn more about Quarto books visit https://quarto.org/docs/books.\n\n1 + 1\n\n[1] 2",
     "crumbs": [
       "Preface"
+    ]
+  },
+  {
+    "objectID": "Identifying_affiliated_publications.html#selecting-a-data-source",
+    "href": "Identifying_affiliated_publications.html#selecting-a-data-source",
+    "title": "2  Identifying affiliated publications",
+    "section": "",
+    "text": "Quick tip\n\n\n\nWe recommend OpenAlex as a free and open bibliographic database that provides extra coverage of humanities, non-English languages, and the Global South.",
+    "crumbs": [
+      "<span class='chapter-number'>2</span>  <span class='chapter-title'>Identifying affiliated publications</span>"
     ]
   }
 ]
