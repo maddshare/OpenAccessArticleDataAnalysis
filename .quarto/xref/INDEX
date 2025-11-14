@@ -1,0 +1,26 @@
+{
+  "index.qmd": {
+    "index.html": "aa8a29f8"
+  },
+  "Initial_considerations.qmd": {
+    "Initial_considerations.html": "f4de7f5a"
+  },
+  "Identifying_affiliated_publications.qmd": {
+    "Identifying_affiliated_publications.html": "7e0627b0"
+  },
+  "Publication_data_cleaning_and_refinement.qmd": {
+    "Publication_data_cleaning_and_refinement.html": "d01d5dc2"
+  },
+  "Estimating_APC_costs.qmd": {
+    "Estimating_APC_costs.html": "46d776fd"
+  },
+  "Combining_APC_costs_with_open_access_publication_data.qmd": {
+    "Combining_APC_costs_with_open_access_publication_data.html": "21b901ae"
+  },
+  "Additional_considerations.qmd": {
+    "Additional_considerations.html": "8c73d6f9"
+  },
+  "References and resources.qmd": {
+    "References and resources.html": "8e5c43c1"
+  }
+}

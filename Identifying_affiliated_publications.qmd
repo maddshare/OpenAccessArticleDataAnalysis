@@ -1,0 +1,59 @@
+# Identifying affiliated publications
+
+## Selecting a data source
+
+\[include overview of main source options, but also explain why we ultimately recommend OpenAlex and note that we will provide a sample workflow for OpenAlex, but that other workflow documents exist for those tools\] 
+
+::: callout-tip
+## Quick tip
+
+We recommend OpenAlex as a free and open bibliographic database that provides extra coverage of humanities, non-English languages, and the Global South.
+:::
+
+https://[docs.google.com/document/d/1RToJwlr2ZdEF1F6FZRyh9izUj0j2llOdlA7tveutd30/edit?usp=sharing](#0){.uri style="background-color: rgb(0, 36, 81); font-size: 11pt;"} 
+
+## Extracting a publication dataset from OpenAlex
+
+As a tool, OpenAlex is flexible and user-friendly. It offers several different ways to interact and analyse data, ranging from an intuitive user-interface, rest API access, and even a complete data snapshot available for download. For the purpose of APC analysis, a search query can be easily generated in the user-interface, accessible at [openalex.org](http://openalex.org).
+
+1.  What are the ways to interact with OpenAlex
+
+    a\. OpenAlex website: <https://openalex.org/>
+
+    b\. OpenAlex API: <https://api.openalex.org/> 
+
+    c\. Complete data snapshot: <https://docs.openalex.org/download-all-data/openalex-snapshot> 
+
+    d\. As of Summer 2025, Alpha testing a custom query builder
+
+2.  Creating a dataset in the user interface
+
+    a\. Need to add data parameters 
+
+    i\. Year (optional, but likely useful for reporting purposes)
+
+    ii\. Institution
+
+    iii\. Type (set to article)
+
+    iv\. \*\*if we use user interface, it is worth explaining why limiting to OA within the interface probably isn’t the best way to limit our results (I think things like bronze or green are included and we only want gold/hybrid for APC calculation purposes)
+
+3.  Export “works” results and save to .csv
+
+4.  Do minimal clean up to data export before moving into other tools, like OpenRefine
+
+    a\. Which fields are necessary for the rest of the analysis?
+
+    i\. DOI
+
+    ii\. Open access status (hybrid or gold)
+
+    iii\. Publisher
+
+    iv\. Corresponding author information
+
+    v\. Journal information (ISSN or e-ISSN)
+
+    vi\. Funder information
+
+    vii\. APC information??

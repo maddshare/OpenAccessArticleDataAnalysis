@@ -1,0 +1,63 @@
+# Estimating APC costs
+
+There is no normalized, accurate, comprehensive data source that can be relied upon to estimate APC costs. Therefore, you will need to draw on a variety of sources depending on your research needs and factors like institutional context.  
+
+Below, we include several well-used data sources, providing an overview of the data source itself, its limitations, and options for gathering and matching the data to your publications dataset. 
+
+-   Publisher reports (from CRKN)
+
+    -   CRKN publication reports are the most reliable data source for determining actual publications from your institution with a specific publisher. They generally indicate the list price APC, any discount applied, and the total price paid (if any). They also provide accurate corresponding author information, which is used to determine eligibility for APC discounts or waivers. However, there are several limitations, including:
+
+    -   The data is not normalized, and formatting is inconsistent.
+
+    -   While articles covered under these agreements generally have no APC, the cost of publication is included within the larger agreement rather than at the article level. In other words, your institution is still paying some amount, just not via an APC.
+
+    -   Generally, these agreements are based on the acceptance date, not the publication date.
+
+        -   There may be other types of publications not covered under this agreement for which an APC was charged (such as a commentary).
+
+        -   This data is also often available via an institutional dashboard supplied by the publisher.
+
+-   OpenAPC
+
+    -   OpenAPC is an open dataset of APCs supplied by [consortia and institutions](https://github.com/OpenAPC/openapc-de). The dataset is entirely dependent on its contributors, and their methodologies and sources may, in turn, vary. Transformative Agreements generally do not include an APC and, therefore, are subject to the same limitations as CRKN data. OpenAlex uses OpenAPC data to determine [APC paid estimates](https://docs.openalex.org/api-entities/works/work-object#apc_paid).
+
+-   Butler et. al (2024) dataset 
+
+<!-- -->
+
+-   This dataset contains and combines annual APC price lists from six publishers - Elsevier, Frontiers, PLOS, MDPI, Springer Nature, and Wiley from 2019 to 2023. It includes 8,712 unique journals and 36,618 journal-year combinations.
+
+-   The dataset includes the following metadata fields: publisher name, ISSN, journal, APC (converted to various currencies), APC date and year, source (Wayback Machine, publisher website, etc.). This information is explained in more detail in Table 2 of the accompanying [data paper](https://doi.org/10.48550/ARXIV.2406.08356).
+
+-   The dataset also merges the variations of journal titles in publisher price lists from cleaning to a unique ID. 
+
+-   Other potentially useful data points: journals that changed publishers, or flipped OA status (hybrid to gold and even gold to hybrid). 
+
+-   Limitations: 
+
+    -   The dataset is limited to 6 publishers.
+
+    -   The dataset is compiled from publisher price lists and therefore replicates any inaccuracies from these price lists. For example, incorrect ISSNs,  potentially incorrect OA statuses, or missing APC data due to society agreements or fees waived for newly established journals. 
+
+<!-- -->
+
+-   The Directory of Open Access Journals (DOAJ): 
+
+    -   DOAJ is a non-profit organization that provides an indexing database of fully open access journals from around the world, including journals that charge and do not charge APCs. To be included in the database, journals must apply and ensure they meet DOAJ criteria. Applications are managed and reviewed by its community of volunteers. 
+
+    -   Many studies have used DOAJ data to analyze OA journals and trends. [Borrego (2023)](https://doi.org/10.1002/leap.1558) discusses many of these studies. [Asai (2023)](https://doi.org/10.1007/s11192-023-04841-z) details some of the DOAJ’s strengths and limitations. For example, Asai explains that APCs in the DOAJ may not be up-to-date, and recommends using the price lists of the three leading publishers (Elsevier, Springer Nature, Wiley) from their websites (you can use the Butler et. al (2024) dataset for this purpose). In addition, DOAJ only includes fully OA journals, so any analysis will not estimate APC expenditure for hybrid OA articles. 
+
+How to gather the APC data:
+
+-   CRKN publication data is supplied via email on their collections list, generally quarterly. It can also be downloaded from the CRKN website in the relevant license profile (login required).
+
+-   OpenAPC data is openly available on [GitHub](https://github.com/OpenAPC/openapc-de).
+
+-   Butler et al. (2024) [dataset](https://doi.org/10.7910/DVN/CR1MMV)and accompanying [data paper](https://doi.org/10.48550/ARXIV.2406.08356) outlining methodology and what the dataset contains.  
+
+-   DOAJ: 
+
+    -   To access their data, please refer to their “documentation” section on the[DOAJ website](https://doaj.org/), as data can be accessed in various ways (API and OAI-PMH, CSV, public data dumps). 
+
+DOAJ data consists of journal-level and article-level metadata and can be accessed in several ways. Refer to the[DOAJ Terms and Conditions](https://doaj.org/terms/) for a complete description.

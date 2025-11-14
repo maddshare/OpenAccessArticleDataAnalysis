@@ -1,0 +1,55 @@
+# Combining APC costs with open access publication data
+
+### Accounting for transformative agreements and discounts
+
+In addition to the publisher-supplied publication data listed above, it’s important to include additional institutional or consortial-level discounts. CRKN maintains a list of negotiated discounts [here](https://www.crkn-rcdr.ca/en/apc-discounts). It is important to note that many Read & Publish agreements combine free OA publishing in hybrid journals with only a discount for gold OA journals. Institutional discounts may also be available, such as from [MDPI](https://www.mdpi.com/ioap).
+
+### Accounting for APCs for all publications 
+
+Many APCs are paid by authors outside of existing OA agreements (consortia or institutional). Estimates of APC expenditure can begin with an overall analysis of all APCs paid by affiliated authors (any affiliated author→corresponding author). This can be done by matching publication data from a selected data source (see Step 1-2) with an APC data source (e.g., CKRN, OpenAPC, Butler et. al (2024), DOAJ). Refer to instructions in Step 5.  
+
+## **Producing estimates**
+
+#### Match APC prices to institutional articles
+
+First, link APC prices (using the sources listed above: CRKN, OpenAPC, Butler et al. dataset, and DOAJ) to individual articles based on the journal title. You can do this using common identifiers such as DOIs, ISSNs, or journal titles (verified by publisher names). This may involve extensive data work, such as cleaning and harmonizing data across different datasets.
+
+Example:
+
+Name of article (DOI) -\> match to Butler et al. dataset.
+
+```{r}
+## Example executable code.
+```
+
+#### Incorporate discounts and waivers 
+
+We recommend you adjust for any known discounts or waivers your institution provides or accesses through consortium negotiations (e.g., see CRKN-negotiated rates). Try to distinguish between prices listed by the publisher and actual prices paid, wherever possible, by indicating this in a new column. If prices are missing, we recommend applying a median rather than an average.
+
+Provide example.
+
+```{r}
+## Example executable code.
+```
+
+#### Calculate the total spend
+
+For an institutional-level analysis, aggregate this APC data by publisher, journal, disciplines, faculty/department, author, etc.
+
+Distinguish between OA status by producing separate estimates for:
+
+-   Gold open access
+
+-   Hybrid open access
+
+-   APCs covered under TAs, or discounts via consortia or institutionally negotiated agreements
+
+We recommend including data on the number of articles used for each category and providing some descriptive statistics, such as average, median, range of APCs, skew, and standard deviation. This provides the reader necessary information needed to critically understand the results of your analysis.
+
+#### Clearly identify gaps/limitations
+
+Do your best to document gaps such as missing APC prices, articles that could not be matched, or other challenges, such as discounts or waivers that were unable to be accounted for. If comparing estimates to subscription payments, consider where articles might fall under subscriptions while also being counted as paid APC articles (hybrid).
+
+#### Data visualizations/results
+
+It may be useful to illustrate trends and patterns visible in the data. Provide tables, charts, or narrative summaries of data to explain APC estimates and how they were produced. We recommend keeping a detailed log of your methods.

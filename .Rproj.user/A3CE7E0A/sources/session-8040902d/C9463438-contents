@@ -1,0 +1,43 @@
+# Publication data cleanup and refinement
+
+### **Selecting tools for data cleaning and refining**
+
+Before moving onto data cleaning, you will need to identify which tools you will use. You should also keep in mind which program you will use to clean the data at the stage of exporting data. For example, if using Excel, it’s easier to manage your data in .xlsx or.csv format rather than .txt or .tsv.
+
+You should select a program for handling data that you are comfortable with. For beginners to this work, Microsoft Excel is a suitable choice. For those with experience using OpenRefine, this program is useful for batch cleaning large amounts of data. If you have experience using R or JSON, this is an effective way to automate data cleaning and allows for quick, iterative changes to your data cleaning preferences. In some cases, you may use a mix of OpenRefine/programming language with Excel.
+
+\[maybe some general comments on possible tools to do this work - people should use the tools they are comfortable with ultimately and that will vary person to person. We can maybe note that with some measure of proficiency in R or JSON you can automate some measure of the work, but this may also be a deterrent for some who are not comfortable with this.\]
+
+### **Getting your data ready**
+
+First, you should understand how your data set describes publications and become familiar with how data is reported. If you’re new to working with publication data, or using a new data source, it will be useful to understand how that data source represents corresponding authors/institutions, open access designations, and what data is included/excluded in the data set. Some initial questions to consider:
+
+-   What column indicates the corresponding author? How can I determine the corresponding institution from this information?
+
+-   If my institution has many affiliated research communities (i.e. hospital networks), how are they represented in the data set?
+
+-   What are the different open access designations? Are there any open access statuses which I want to exclude? 
+
+-   Is there any missing data that I need for my assessment (i.e. CC license, subject area, OA availability)
+
+-   If I am matching this data set with another source, is there a matching identifier between the two sources that I can match on? (tip: take a DOI, from one data source and search for it in the second data source to confirm that the identifier is set up the same)
+
+After becoming familiar with your data set, you can begin to prepare it for data cleaning. Depending on the data source, you may have many columns that are not needed for assessment (ex., Page numbers). To improve the efficiency of your data set, identify columns that are irrelevant to your assessment and delete these.
+
+### **Filter by open access designation**
+
+#### Limiting your results to open access publications only; and OA publications where an APC was paid (hybrid and gold) (APC-able)
+
+### **Filter by corresponding author**
+
+#### Limiting your results to open access publications for which an APC was paid by an institutional affiliate
+
+-   Institution name may be spelled differently across publications, ex. University of Toronto, Univ Toronto, Univ of Toronto. A literal filter would exclude this but a regular expression pattern such as .\*university of toronto.\* would pick up most spelling variants. 
+
+\[we should have instructions for how to do this in excel and openrefine. If people are using programming, i think they can handle writing that query in whatever language they use\]
+
+Don’t forget to mention: 
+
+-   If there are too many characters in a field, you may exceed the character length in Excel - but Google Sheets has more characters allowed per cell, so you can work around that way
+
+-   Encoding as UTF-8 is vital when exporting can also be important to avoid errors in Excel

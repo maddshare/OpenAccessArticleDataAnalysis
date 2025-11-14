@@ -1,0 +1,27 @@
+project:
+  type: book
+  output-dir: docs
+book:
+  title: "Open Access Article Data Analysis Workflow"
+  author: "APC Working Group (Leigh-Ann Butler, Lauren Byl, Erin Calhoun, Erin Fields, Jason Friedman, Madelaine Hare, Jaclyn McLean, Stephanie Savage, Mark Swartz)"
+  date: "2025-07-17"
+  chapters:
+    - index.qmd 
+    - Initial_considerations.qmd
+    - Identifying_affiliated_publications.qmd
+    - Publication_data_cleaning_and_refinement.qmd
+    - Estimating_APC_costs.qmd
+    - Combining_APC_costs_with_open_access_publication_data.qmd
+    - Additional_considerations.qmd
+    - References and resources.qmd
+
+bibliography: references.bib
+
+format:
+  html:
+    theme: cosmo
+  pdf:
+    documentclass: scrreprt
+
+editor: visual
+
