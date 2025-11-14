@@ -134,6 +134,22 @@
 
 \KOMAoption{captions}{tableheading}
 \makeatletter
+\@ifpackageloaded{tcolorbox}{}{\usepackage[skins,breakable]{tcolorbox}}
+\@ifpackageloaded{fontawesome5}{}{\usepackage{fontawesome5}}
+\definecolor{quarto-callout-color}{HTML}{909090}
+\definecolor{quarto-callout-note-color}{HTML}{0758E5}
+\definecolor{quarto-callout-important-color}{HTML}{CC1914}
+\definecolor{quarto-callout-warning-color}{HTML}{EB9113}
+\definecolor{quarto-callout-tip-color}{HTML}{00A047}
+\definecolor{quarto-callout-caution-color}{HTML}{FC5300}
+\definecolor{quarto-callout-color-frame}{HTML}{acacac}
+\definecolor{quarto-callout-note-color-frame}{HTML}{4582ec}
+\definecolor{quarto-callout-important-color-frame}{HTML}{d9534f}
+\definecolor{quarto-callout-warning-color-frame}{HTML}{f0ad4e}
+\definecolor{quarto-callout-tip-color-frame}{HTML}{02b875}
+\definecolor{quarto-callout-caution-color-frame}{HTML}{fd7e14}
+\makeatother
+\makeatletter
 \@ifpackageloaded{bookmark}{}{\usepackage{bookmark}}
 \makeatother
 \makeatletter
@@ -336,9 +352,9 @@ The table below highlights the commonly used tools, their data coverage,
 and commonly known limitations and biases in the dataset.
 
 \begin{longtable}[]{@{}
-  >{\raggedright\arraybackslash}p{(\columnwidth - 4\tabcolsep) * \real{0.1141}}
-  >{\raggedright\arraybackslash}p{(\columnwidth - 4\tabcolsep) * \real{0.2599}}
-  >{\raggedright\arraybackslash}p{(\columnwidth - 4\tabcolsep) * \real{0.6247}}@{}}
+  >{\raggedright\arraybackslash}p{(\columnwidth - 4\tabcolsep) * \real{0.1129}}
+  >{\raggedright\arraybackslash}p{(\columnwidth - 4\tabcolsep) * \real{0.2603}}
+  >{\raggedright\arraybackslash}p{(\columnwidth - 4\tabcolsep) * \real{0.6255}}@{}}
 \toprule\noalign{}
 \endhead
 \bottomrule\noalign{}
@@ -581,10 +597,18 @@ publications}\label{identifying-affiliated-publications}
 
 {[}include overview of main source options, but also explain why we
 ultimately recommend OpenAlex and note that we will provide a sample
-workflow for Open Alex, but that other workflow documents exist for
-those tools{]}~
+workflow for OpenAlex, but that other workflow documents exist for those
+tools{]}~
 
-\url{https://docs.google.com/document/d/1RToJwlr2ZdEF1F6FZRyh9izUj0j2llOdlA7tveutd30/edit?usp=sharing}~
+\begin{tcolorbox}[enhanced jigsaw, opacitybacktitle=0.6, breakable, toprule=.15mm, toptitle=1mm, colframe=quarto-callout-tip-color-frame, coltitle=black, bottomtitle=1mm, left=2mm, title=\textcolor{quarto-callout-tip-color}{\faLightbulb}\hspace{0.5em}{Quick tip}, arc=.35mm, rightrule=.15mm, colback=white, leftrule=.75mm, opacityback=0, colbacktitle=quarto-callout-tip-color!10!white, bottomrule=.15mm, titlerule=0mm]
+
+We recommend OpenAlex as a free and open bibliographic database that
+provides extra coverage of humanities, non-English languages, and the
+Global South.
+
+\end{tcolorbox}
+
+https://\hyperref[0]{docs.google.com/document/d/1RToJwlr2ZdEF1F6FZRyh9izUj0j2llOdlA7tveutd30/edit?usp=sharing}~
 
 \section{Extracting a publication dataset from
 OpenAlex}\label{extracting-a-publication-dataset-from-openalex}
@@ -614,38 +638,37 @@ can be easily generated in the user-interface, accessible at
 
   a. Need to add data parameters~
 
-\begin{verbatim}
-i\. Year (optional, but likely useful for reporting purposes)
+  i. Year (optional, but likely useful for reporting purposes)
 
-ii\. Institution
+  ii. Institution
 
-iii\. Type (set to article)
+  iii. Type (set to article)
 
-iv\. \*\*if we use user interface, it is worth explaining why limiting to OA within the interface probably isn’t the best way to limit our results (I think things like bronze or green are included and we only want gold/hybrid for APC calculation purposes)
-\end{verbatim}
+  iv. **if we use user interface, it is worth explaining why limiting to
+  OA within the interface probably isn't the best way to limit our
+  results (I think things like bronze or green are included and we only
+  want gold/hybrid for APC calculation purposes)
 \item
   Export ``works'' results and save to .csv
 \item
   Do minimal clean up to data export before moving into other tools,
   like OpenRefine
 
-\begin{verbatim}
-a\. Which fields are necessary for the rest of the analysis?
+  a. Which fields are necessary for the rest of the analysis?
 
-i\. DOI
+  i. DOI
 
-ii\. Open access status (hybrid or gold)
+  ii. Open access status (hybrid or gold)
 
-iii\. Publisher
+  iii. Publisher
 
-iv\. Corresponding author information
+  iv. Corresponding author information
 
-v\. Journal information (ISSN or e-ISSN)
+  v. Journal information (ISSN or e-ISSN)
 
-vi\. Funder information
+  vi. Funder information
 
-vii\. APC information??
-\end{verbatim}
+  vii. APC information??
 \end{enumerate}
 
 \bookmarksetup{startatroot}
