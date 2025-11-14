@@ -54,10 +54,10 @@ How to gather the APC data:
 
 -   OpenAPC data is openly available on [GitHub](https://github.com/OpenAPC/openapc-de).
 
--   Butler et al. (2024) [dataset ](https://doi.org/10.7910/DVN/CR1MMV)and accompanying [data paper](https://doi.org/10.48550/ARXIV.2406.08356) outlining methodology and what the dataset contains.  
+-   Butler et al. (2024) [dataset](https://doi.org/10.7910/DVN/CR1MMV)and accompanying [data paper](https://doi.org/10.48550/ARXIV.2406.08356) outlining methodology and what the dataset contains.  
 
 -   DOAJ: 
 
-    -   To access their data, please refer to their “documentation” section on the[ DOAJ website](https://doaj.org/), as data can be accessed in various ways (API and OAI-PMH, CSV, public data dumps). 
+    -   To access their data, please refer to their “documentation” section on the[DOAJ website](https://doaj.org/), as data can be accessed in various ways (API and OAI-PMH, CSV, public data dumps). 
 
-DOAJ data consists of journal-level and article-level metadata and can be accessed in several ways. Refer to the[ DOAJ Terms and Conditions](https://doaj.org/terms/) for a complete description.
+DOAJ data consists of journal-level and article-level metadata and can be accessed in several ways. Refer to the[DOAJ Terms and Conditions](https://doaj.org/terms/) for a complete description.
